@@ -1,0 +1,23 @@
+{
+	"version": 2,
+	"name": "huggingFace-proxy",
+
+	"builds": [
+		{
+			"src": "proxy.js",
+			"use": "@vercel/node"
+		}
+	],
+	"routes": [
+		{
+			"src": "/(.*)",
+			"dest": "/proxy.js"
+		}
+	],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/proxy.js"
+    }
+  ]
+}
