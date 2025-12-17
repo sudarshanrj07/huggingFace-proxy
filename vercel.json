@@ -13,11 +13,5 @@
 			"src": "/(.*)",
 			"dest": "/proxy.js"
 		}
-	],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/proxy.js"
-    }
-  ]
+	]
 }
